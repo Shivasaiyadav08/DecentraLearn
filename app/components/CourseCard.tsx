@@ -2,13 +2,14 @@ type Props = {
   title: string;
   teacher: string;
   price: string;
+  imageUrl: string;
 };
 
-export default function CourseCard({ title, teacher, price }: Props) {
+export default function CourseCard({ title, teacher, price , imageUrl }: Props) {
   return (
     <div className="bg-white p-4 rounded-xl shadow hover:shadow-lg transition">
       <img
-        src="https://via.placeholder.com/400x200"
+        src={imageUrl}
         alt={title}
         className="rounded-lg mb-3"
       />
